@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking Form - Work in Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Hotel Booking Form</h2>
+<p class="progress-text">⚠ Project Status: Work in Progress (Day 6)</p>
+
+<form id="bookingForm">
+
+    <label>Check-in Date:</label>
+    <input type="date" id="checkin" required>
+
+    <label>Check-out Date:</label>
+    <input type="date" id="checkout" required>
+
+    <label>Room Type:</label>
+    <select id="roomType" required>
+        <option value="">Select Room</option>
+        <option>Single</option>
+        <option>Double</option>
+        <option>Suite</option>
+    </select>
+
+    <label>Number of Guests:</label>
+    <input type="number" id="guests" min="1" required>
+
+    <label>Special Requests:</label>
+    <textarea id="requests" rows="4"></textarea>
+
+    <button type="submit">Book Now</button>
+
+    <p id="message"></p>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
